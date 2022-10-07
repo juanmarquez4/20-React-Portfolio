@@ -108,13 +108,31 @@
     .navigation-menu li:hover {
       background-color: #eee;
     }
+    .footer {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 77px);
+        background-color: white;
+        border-top: 1px solid black;
+        display: none;
+      }
   }
 
-/*  */
-  
+/* project section style */
+
   .project {
-    background: #385dff;
-    height: 500px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.5rem 0rem;
+    background-color:   #385dff;
+    color: black;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
   }
 
   /* footer style */
@@ -129,3 +147,5 @@
     color: black;
     box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
   }
+
+  
