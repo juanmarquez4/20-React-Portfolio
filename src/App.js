@@ -14,7 +14,6 @@ function App() {
     <Header />
     <Project />
     <Footer />
-
   </div>
   );
 }
