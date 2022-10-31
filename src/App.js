@@ -1,8 +1,14 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import './App.css';
 import Header from './components/Header';
 import Project from './components/Project';
 import Footer from './components/Footer';
+
+import AboutMe from './pages/Aboutme';
+import Contact from './pages/Contact';
+import Resume from './pages/Resume';
 
 
 // TODO: Add a comment explaining what this function is doing
@@ -11,9 +17,28 @@ import Footer from './components/Footer';
 function App() {
   return (
   <div>
-    <Header />
-    <Project />
-    <Footer />
+    <Router>
+      <Header />
+        <Routes>
+        <Route
+            path="/"
+            element={<AboutMe/>}
+          /> 
+          <Route
+            path="/portfolio"
+            element={<Project/>}
+          /> 
+            <Route
+            path="/contact"
+            element={<Contact/>}
+          /> 
+            <Route
+            path="/resume"
+            element={<Resume/>}
+          /> 
+        </Routes>
+      <Footer />
+    </Router>
   </div>
   );
 }

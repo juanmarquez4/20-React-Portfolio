@@ -30,16 +30,16 @@ function Navigation() {
             }>
             <ul>
                 <li>
-                    <a href="/home">About me</a>
+                    <a href="/">About me</a>
                 </li>
                 <li>
-                    <a href="/home">Portfolio</a>
+                    <a href="/portfolio">Portfolio</a>
                 </li>
                 <li>
-                    <a href="/about">Contact</a>
+                    <a href="/contact">Contact</a>
                 </li>
                 <li>
-                    <a href="/contact">Resume</a>
+                    <a href="/resume">Resume</a>
                 </li>
              </ul>
         </div>
