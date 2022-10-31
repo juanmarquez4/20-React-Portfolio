@@ -1,12 +1,17 @@
 import React from 'react';
+import { Card } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
 import '../App.css';
 
 
 function Footer() {
     return (
-        <footer className="footer">
-            <a href="/" className="brand-name">© Juan Marquez. All Rights Reserved</a>
-        </footer>
+        <Container>
+            <Card className="footer border-0">
+                <Card.Link href="https://github.com/juanmarquez4" className="brand-name">© Juan Marquez. All Rights Reserved </Card.Link>
+            </Card>
+        </Container>
+       
     );
 }
 

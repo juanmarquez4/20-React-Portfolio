@@ -18,14 +18,14 @@ function App() {
   return (
   <div>
     <Router>
-      <Header />
+      <Header/>
         <Routes>
         <Route
-            path="/"
+            path="/20-React-Portfolio"
             element={<AboutMe/>}
           /> 
           <Route
-            path="/portfolio"
+            path="/projects"
             element={<Project/>}
           /> 
             <Route
